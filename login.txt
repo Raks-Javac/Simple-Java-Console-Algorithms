@@ -1,0 +1,41 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Login extends JFrame 
+{
+	JLabel lbUsername, lbPassword;
+	JTextField txtUsername, txtPassword;
+	JButton btnLogin;
+
+  public class Login() {
+	lbUsername = new JLabel("Username");
+	lbPassword = new JLabel("Password");
+
+	txtUsername = new JTextField(20);
+	txtPassword = new JTextField(20);
+
+	btnLogin = new JButton("Login");
+
+
+setLayout(new FlowLayout());
+
+add(lbUsername); add(txtUsername);add(lbPassword); add(txtPassword);
+add(btnLogin);
+
+//Activate Close Button on Frame Window
+setDefaultCloseOperation(EXIT_ON_CLOSE);
+}
+public static void main(String[] musty) 
+{
+Login lg =new  Login();
+
+
+lg.setVisible(true);
+//lg.setSize(300,200);
+lg.setSize(350,200);
+lg.setResizable(true);
+lg.setTitle("Login");
+}
+
+}
+

@@ -1,0 +1,19 @@
+public class Sw_it_ch {
+   public static void main(String []args) {
+   int age; 
+    age= 10;
+ switch(age)
+  {
+    case 10: 
+     System.out.println("boot");
+     break;
+    case 11: 
+     System.out.println("shutdown");
+     break;
+    case 12:
+     System.out.println("Restart");
+     break;
+    default: System.out.println("select task");
+  }
+ }
+}

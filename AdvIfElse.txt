@@ -1,0 +1,12 @@
+﻿public class AdvIfElse{
+    pubic static void main(String args[]){
+        int score=100;
+         if(score>=100);
+        {
+         System.out.println("A+ Excellent!");
+        }
+        else{
+         System.out.println("the person has either scored B'VeryGood,C'Credit,D'Good,E'Pass, or F'Fail");
+        }
+ }
+}

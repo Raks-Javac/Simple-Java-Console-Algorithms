@@ -1,0 +1,61 @@
+import javax.swing.*;
+import java.awt.*;
+
+class RegistrationForm extends JFrame
+{
+
+JLabel lbTitle, lbSurname, lbOtherName, lbBirthDate, lbEmail, lbPhone, lbCity, lbState;
+JTextField txtTitle,txtSurname,txtOtherName,txtBirthDate,txtEmail,txtPhone,txtCity,txtState;
+JButton btnRegister;
+JButton btnLogin;
+
+
+public RegistrationForm()
+{
+
+lbTitle =new JLabel("Tittle");
+lbSurname =new JLabel("Surname");
+lbOtherName =new JLabel("Other Name");
+lbBirthDate =new JLabel("Birth Date");
+lbEmail =new JLabel("Email");
+lbPhone =new JLabel("Phone");
+lbCity =new JLabel("City");
+lbState =new JLabel("State");
+
+txtTitle =new JTextField(20);
+txtSurname =new JTextField(20);
+txtOtherName =new JTextField(20);
+txtBirthDate =new JTextField(20);
+txtEmail =new JTextField(20);
+txtPhone =new JTextField(20);
+txtCity =new JTextField(20);
+txtState =new JTextField(20);
+btnLogin = new JButton("Login");
+setLayout(new FlowLayout());
+
+add(lbTitle);add(txtTitle); add(lbSurname);add(txtSurname); add(lbOtherName);add(txtOtherName); add(lbBirthDate);add(txtBirthDate);
+add(lbEmail);add(txtEmail); add(lbPhone);add(txtPhone); add(lbCity);add(txtCity); add(lbState); add(txtState);
+add(btnLogin); 
+  
+
+//Activate Close Button on Frame Window setDefaultCloseOperation(EXIT_ON_CLOSE);
+setDefaultCloseOperation(EXIT_ON_CLOSE);
+}
+public static void main(String [] args)
+{
+RegistrationForm reg =new RegistrationForm();
+reg.setSize(250,550);
+reg.setVisible(true);
+reg.setResizable(false);
+reg.setTitle("Login");
+  
+}
+}
+
+
+
+
+
+
+
+
